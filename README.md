@@ -3,6 +3,13 @@
 -   Notes on Redux, Sagas, Firebase, Stripe API, can be found in the optimized repo
 -   https://github.com/kawgh1/react-crown-clothing-optimized
 
+-   ## Tools Used
+
+    -   Apollo Boost
+    -   React Apollo
+    -   GraphQL
+    -   **npm install apollo-boost react-apollo graphql**
+
 -   ### GraphQL
 
     ![graph-ql-diagram](https://raw.githubusercontent.com/kawgh1/react-crown-clothing-optimized/graphql/diagrams/graphql-diagram.png)
