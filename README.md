@@ -12,7 +12,7 @@
 
 -   ### GraphQL
 
-    ![graph-ql-diagram](https://raw.githubusercontent.com/kawgh1/react-crown-clothing-optimized/graphql/diagrams/graphql-diagram.png)
+    ![graph-ql-diagram](https://raw.githubusercontent.com/kawgh1/crown-clothing-graph-ql/master/diagrams/graphql-diagram.png)
 
     -   GraphQL is a backend language that wraps around an existing database or server that you can make requests to in a different (ideally more efficient, flexible) way than the traditional CRUD / REST (GET, POST, PUT, DELETE) way
     -   REST Example
@@ -119,4 +119,4 @@
         -   Graph QL + Apollo are still being developed - troubleshooting and support may be more difficult when building custom solutions
 
     -   ### Apollo
-        ![apollo-diagram](https://raw.githubusercontent.com/kawgh1/react-crown-clothing-optimized/graphql/diagrams/apollo-diagram.png)
+        ![apollo-diagram](https://raw.githubusercontent.com/kawgh1/crown-clothing-graph-ql/master/diagrams/apollo-diagram.png)
