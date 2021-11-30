@@ -166,6 +166,6 @@
     -   `compose` was removed from React-Apollo 3 - this was a breaking change
 
     -   To fix, install lodash.flowright
-
+    -   **see src/components/cart-icon/cart-icon.container.jsx**
     -   see notes
         -   https://stackoverflow.com/questions/57445294/compose-not-exported-from-react-apollo
