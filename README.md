@@ -123,7 +123,7 @@
 
 -   ### Collection Container example
 
-    -   pages/collection/collection.container.js
+    -   src/pages/collection/collection.container.js
 
             import React from "react";
             import { Query } from "react-apollo";
@@ -160,3 +160,12 @@
                 </Query>
             );
             export default CollectionPageContainer;
+
+-   ### `Compose` Error
+
+    -   `compose` was removed from React-Apollo 3 - this was a breaking change
+
+    -   To fix, install lodash.flowright
+
+    -   see notes
+        -   https://stackoverflow.com/questions/57445294/compose-not-exported-from-react-apollo

@@ -20,6 +20,9 @@ import { store, persistor } from "./redux/store";
 import "./index.css";
 import App from "./App";
 
+// graphql
+import { resolvers, typeDefs } from "./graphql/resolvers";
+
 // this uri is a dummy Apollo/GraphQL server created by Yihua for dev purposes
 const apolloHttpLink = createHttpLink({
     uri: "https://crwn-clothing.com",
@@ -32,8 +35,17 @@ const apolloCache = new InMemoryCache();
 const apolloClient = new ApolloClient({
     link: apolloHttpLink,
     cache: apolloCache,
+    typeDefs: typeDefs,
+    resolvers: resolvers,
 });
 
+apolloClient.writeData({
+    data: {
+        cartHidden: true,
+    },
+});
+
+// this just console.logs the hats
 apolloClient
     .query({
         query: gql`
