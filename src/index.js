@@ -22,6 +22,8 @@ import App from "./App/App";
 
 // graphql
 import { resolvers, typeDefs } from "./graphql/resolvers";
+// dummy data
+import { default as data } from "./graphql/initial-data";
 
 // this uri is a dummy Apollo/GraphQL server created by Yihua for dev purposes
 const apolloHttpLink = createHttpLink({
@@ -39,15 +41,10 @@ const apolloClient = new ApolloClient({
     resolvers: resolvers,
 });
 
-apolloClient.writeData({
-    data: {
-        cartHidden: true,
-        cartItems: [],
-        itemCount: 0,
-    },
-});
+// initialize data
+apolloClient.writeData({ data });
 
-// this just console.logs the hats
+// Query example, this just console.logs the hats
 apolloClient
     .query({
         query: gql`
