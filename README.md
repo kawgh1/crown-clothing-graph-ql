@@ -1,6 +1,6 @@
 Live Site - https://crown-clothing-graph-ql.herokuapp.com/
 
-# This implementation is focused mostly on an Apollo + GraphQL setup
+# This implementation is focused mostly on an Apollo + GraphQL setup - styling/ UI is minimal
 
 -   Notes on Redux, Sagas, Firebase, Stripe API, can be found in the optimized repo
 -   https://github.com/kawgh1/react-crown-clothing-optimized
