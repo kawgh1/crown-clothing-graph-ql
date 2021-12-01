@@ -30,6 +30,9 @@ import { default as data } from "./graphql/initial-data";
 // this uri is a dummy Apollo/GraphQL server created by Yihua for dev purposes
 const apolloHttpLink = createHttpLink({
     uri: "https://crwn-clothing.com",
+    fetchOptions: {
+        mode: "no-cors",
+    },
 });
 
 // Top level local storage memory Cache
