@@ -1,6 +1,6 @@
 import React from "react";
 
-import CollectionItemContainer from "../../components/collection-item/collection-item.container";
+import CollectionItem from "../../components/collection-item/collection-item.component";
 
 import "./collection.styles.scss";
 
@@ -11,7 +11,7 @@ const CollectionPage = ({ collection }) => {
             <h2 className="title">{title}</h2>
             <div className="items">
                 {items.map((item) => (
-                    <CollectionItemContainer key={item.id} item={item} />
+                    <CollectionItem key={item.id} item={item} />
                 ))}
             </div>
         </div>
