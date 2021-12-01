@@ -29,7 +29,7 @@ import { default as data } from "./graphql/initial-data";
 
 // this uri is a dummy Apollo/GraphQL server created by Yihua for dev purposes
 const apolloHttpLink = createHttpLink({
-    uri: "https://mysterious-reaches-23758.herokuapp.com/https://crwn-clothing.com",
+    uri: "https://crwn-clothing.com",
 });
 
 // Top level local storage memory Cache
