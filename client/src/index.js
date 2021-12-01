@@ -11,9 +11,11 @@ import { createHttpLink } from "apollo-link-http";
 // Apollo uses this to cache the data it gets in local memory
 import { InMemoryCache } from "apollo-cache-inmemory";
 // Apollo boost contains a lot of smaller apollo libraries bundled together - such as createHttpLink and InMemoryCache
-import { ApolloClient, gql } from "apollo-boost";
+import { gql } from "apollo-boost";
 // 'gql' above is a graphql data object format so that graphql data object can be passed back and forth and read
 // between graphql and apollo
+
+import ApolloClient from "apollo-client";
 
 import { store, persistor } from "./redux/store";
 
@@ -28,9 +30,6 @@ import { default as data } from "./graphql/initial-data";
 // this uri is a dummy Apollo/GraphQL server created by Yihua for dev purposes
 const apolloHttpLink = createHttpLink({
     uri: "https://crwn-clothing.com",
-    fetchOptions: {
-        mode: "no-cors",
-    },
 });
 
 // Top level local storage memory Cache
